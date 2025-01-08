@@ -6,91 +6,112 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 
     <title>中野ゼミ3年 ゆめうつつ展</title>
 
     <!-- 作成したcss -->
 <link rel="stylesheet" href="css/style.css">
-
-    <header>
-        <h1>中野ゼミナール3年</h1>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">ホーム</a>
-                </li>
-
-                <li>
-                    <a href="">展示概要</a>
-                    
-                </li>
-
-<!--                
-                <li>
-                    <a href="">作品紹介</a>
-                    
-                </li>
--->
-
-                <li>
-                    <a href="">ゼミ紹介</a>
-                </li>
-
-                <li>
-                    <a href="">感想フォーム</a>
-                </li>
-            </ul>
-            
-        </nav>
-        
-    </header>
-
-</head>
-<body>
     
-    <main>
-        <section class="caption_head">
-            <span>2025/1/15(Wed) ～ 1/17(Fri)</span>
-            <br>
-            <span>H棟1階にて展示</span>
-            <br>
-        </section>
+    <!-- ヘッダー背景表示用 -->
+    <div class="background">
 
-            <img src="images/logo_top.png" alt="ゆめうつつ展ロゴ" width="500">
-            <br>
+        <!-- ナビゲーションバー -->
+        <header>
+            <img src="images/logo_zemi.png" alt="中野ゼミ ロゴ" width="70">
 
-        <section class="caption_bottom">
-            <div>
-                「ゆめうつつ展」では、中野ゼミ3年生が制作した作品展示を行っています。
-            </div>
-        </section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#1gaiyou">概要</a>
+                        
+                    </li>
+              
+                    <li>
+                        <a href="#2zemi">ゼミ紹介</a>
+                        
+                    </li>
 
-        <section class="topic">
-            <h2>展示概要</h2>
+                    <li>
+                        <a href="#3tenji">展示紹介</a>
+                    </li>
 
-            社会情報学部社会情報学科情報デザイン専攻
-            中野ゼミナール3年生
+                    <li>
+                        <a href="#4form">感想フォーム</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            
+        </header>
 
-            2025年1月15日(水)～1月17日(金)
-            H棟1階エントランスホール
-        </section>
-        
-<!--
+    </head>
 
-        <section class="topic">
-                    作品紹介
+    <body>
+
+        <!-- ロゴと簡単説明文 -->
+        <main>
+                <img src="images/logo_top.png" alt="ゆめうつつ展ロゴ" width="500">
+                <br>
+
+            <section class="caption_bottom">
+                <div>
+                    2025年1月15日(水)～17日(金)　H棟1階にて展示
+                </div>
+            </section>
+
+    </div>
+    
+        <!--背景画像リピート用 wrap-->
+        <div class="wrap_pattern" id="wrap">
+            <!-- 本文 -->
+            <div class="main_text">
+
+                <!-- １.概要 -->
+                <section id="1gaiyou" class="topic">
+                    <h2>概要</h2>
+
+                    社会情報学部社会情報学科情報デザイン専攻
+                    <br>
+                    中野ゼミナール3年生
+                    <br>
+                    <br>
+
+                    2025年1月15日(水)～1月17日(金)
+                    <br>
+                    H棟1階エントランスホール
                 </section>
--->
+                
+                <!-- ２.ゼミ紹介 -->
+                <section id="2zemi" class="topic">
+                    <h2>ゼミ紹介</h2>
+                    デジタル技術を用いたメディア表現や、デザインの思考方法や理論について研究しています。
 
-        <section class="topic">
-            ゼミ紹介
-        </section>
+                </section>
 
-        <section class="topic">
-            感想フォーム
-        </section>
+                <!-- ３.展示紹介 -->
+                <section id="3tenji" class="topic">
+                    <h2>展示紹介</h2>
+                    中野ゼミの3年生が、それぞれの興味や問題意識、感じていることを元に作品を制作しました。
+                    <br>
+                    ゼミ生みんなが、空想と現実の関係性について考え作品を形作っていったことから、展示会タイトルを「ゆめうつつ展」としました。
+                    
+
+                </section>
+            </div>
+        </div>
+
+            <div class="main_text">
+                <!-- ４.感想フォーム -->
+                <section id="4form" class="topic">
+                    <h2>感想フォーム</h2>
+                    今後の活動の励みになりますので、ぜひお気軽にご回答ください。
+                    <br>
+                    下記のボタンよりご感想をお聞かせくださると幸いです。
+                    <br>
+                    <a href="https://forms.gle/PChJh5ipjZZqGGTq5" class="btn">ご回答はこちらから</a>
+                </section>
+            </div>
 
     </main>
 
