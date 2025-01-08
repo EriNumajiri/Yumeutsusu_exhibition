@@ -3,12 +3,16 @@
     padding: 0;
 }
 
+/*** 全体設定 ***/
 body{
     text-align:center;
 
-    font-family: "Sawarabi Mincho", serif;
+    font-family: "Noto Sans JP", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    color: #82627B;
 }
 
 main{
@@ -19,13 +23,34 @@ main{
     margin-left : auto;
 }
 
+/*** ヘッダー ***/
 header{
+    position: relative;
+
     text-align:center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*ヘッダー背景*/
+.background{
+    position: relative;
+    background-image: url(../images/header1.png);
+    background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
+/*ナビゲーション*/
 nav ul{
     display: flex;
     list-style-type: none;
@@ -37,15 +62,50 @@ nav{
     text-align: right;
 }
 
-.caption_head{
-    text-align: left;
-}
 
-.caption_bottom{
+/*** 本文全体 ***/
+.main_text{
+    width: 50%;
     text-align: center;
+    margin: auto;
+    display: block;
+
+    padding-bottom: 50px;
 }
 
+.main_text h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.wrap_pattern{
+    padding: 50px 0;
+
+    background-image: url(../images/pattern1.png);
+    background-size:7%;
+    background-color:rgba(255,255,255,0.6);
+    background-blend-mode:lighten;
+}
+
+/*各項目 汎用設定*/
 .topic{
     text-align: left;
-    margin: auto;
+    margin: 60px auto;
 }
+
+
+
+.btn {
+    border-radius: 80px;
+    background-color: #82627B;
+    padding: 10px 20%;
+    text-decoration: none;
+    color: white;
+
+    text-align: center;
+    display: block;
+    width: auto;
+    margin: 20px auto;
+  }
